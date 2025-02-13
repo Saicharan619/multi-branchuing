@@ -5,9 +5,15 @@ pipeline {
         stage('Hello') {
             steps {
             sh  'docker build -t ping . '
-            sh 'docker run -it ping /bin/sh '
+            
  
             }
-        }
+    stage('Hell2') {
+            steps {
+            sh 'docker run -it ping /bin/bash '
+            
+ 
+            }
+            
     }
 }
