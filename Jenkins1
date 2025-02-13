@@ -5,7 +5,8 @@ pipeline {
         stage('Hello') {
             steps {
             sh  'docker build -t ping . '
-            sh 'docker run -it ping' 
+            sh 'docker run -it ping /bin/sh '
+ 
             }
         }
     }
