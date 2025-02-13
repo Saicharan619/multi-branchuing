@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-             docker build -t ping .
-            docker run -it ping 
+            sh  'docker build -t ping . '
+            sh 'docker run -it ping' 
             }
         }
     }
