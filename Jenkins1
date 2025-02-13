@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-              sh  "whoami"
+             docker build -t ping .
+            docker run -it ping 
             }
         }
     }
