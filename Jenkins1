@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Hello1') {
             steps {
             sh  'docker build -t ping . '
             
  
             }
 }
-    stage('Hell2') {
+    stage('Hell02') {
             steps {
             sh 'docker run -d --name ping-container ping'
 
