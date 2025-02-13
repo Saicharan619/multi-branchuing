@@ -8,6 +8,7 @@ pipeline {
             
  
             }
+}
     stage('Hell2') {
             steps {
             sh 'docker run -it ping /bin/bash '
@@ -16,4 +17,5 @@ pipeline {
             }
             
     }
+}
 }
