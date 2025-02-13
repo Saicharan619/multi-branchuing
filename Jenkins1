@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    stages {
+    stages  {
         stage('Hello1') {
             steps {
             sh  'docker build -t ping . '
