@@ -11,7 +11,7 @@ pipeline {
 }
     stage('Hell2') {
             steps {
-            docker run -d --name ping-container ping
+            sh 'docker run -d --name ping-container ping'
 
             
  
